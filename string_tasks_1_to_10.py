@@ -55,3 +55,10 @@ k = len(string)
 for i in range(k):
     if string[i] == string[k - 1]:
         print(i)
+
+# 6
+
+string = 'qweqjjflsdjflsfjgdf'
+k = len(string)
+
+print(string[3: k: 3])
