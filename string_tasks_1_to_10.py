@@ -33,3 +33,13 @@ if k <= 5:
 
 else:
     print(a[0: 3], a[k - 3: k])
+
+array = []
+
+for i in range(10):
+    if i % 2 == 0:
+        array.append(random.choice('0123456789'))
+    else:
+        array.append(random.choice('qwertyuiopasdfghjklzxc'))
+
+print(''.join(array))
