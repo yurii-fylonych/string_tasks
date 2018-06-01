@@ -1,45 +1,57 @@
+import random
+
 # 1
 
-a = 'qwerty'
+string = 'qwerty'
 
 for i in range(3):
     if i == 2:
-        print(a)
+        print(string)
     else:
-        print(a, end=', ')
+        print(string, end=', ')
 
 
 # 2
 
-a = 'qwertyu'
+string = 'qwertyu'
 
-k = len(a)
+k = len(string)
 m = int(k / 2)
 
 if k % 2 == 0:
-    print(a[0: k: k - 1])
+    print(string[0: k: k - 1])
 else:
-    print(a[0: k: m])
+    print(string[0: k: m])
 
 # 3
 
-a = 'qwer'
+string = 'qwer'
 
-k = len(a)
+k = len(string)
 
 if k <= 5:
     for i in range(k + 1):
-        print(a[0], end=' ')
+        print(string[0], end=' ')
 
 else:
-    print(a[0: 3], a[k - 3: k])
+    print(string[0: 3], string[k - 3: k])
 
-array = []
+# 4
+lst = []
 
 for i in range(10):
     if i % 2 == 0:
-        array.append(random.choice('0123456789'))
+        lst.append(random.choice('0123456789'))
     else:
-        array.append(random.choice('qwertyuiopasdfghjklzxc'))
+        lst.append(random.choice('qwertyuiopasdfghjklzxc'))
 
-print(''.join(array))
+print(''.join(lst))
+
+# 5
+
+string = 'qweqjjflsdjflsfjgdf'
+k = len(string)
+
+for i in range(k):
+    if string[i] == string[k - 1]:
+        print(i)
