@@ -100,3 +100,23 @@ while i < len(string):
         print('Char', string[i], 'was found earlier')
         break
     i += 1
+
+# 9
+
+a = '0qweqjjf+yls+xdyj0fxx+lsf+jgdf'
+b = 'asdlasl;kd;alskfk;sdkf;sdflf12312321'
+
+k = len(a)
+m = len(b)
+diff = abs(m - k)
+
+def print_string(string, n):
+    for i in range(n):
+        print(string)
+
+if k == m:
+    print('String a and b have equal number of chars')
+elif k < m:
+    print_string(b, diff)
+else:
+    print_string(a, diff)
