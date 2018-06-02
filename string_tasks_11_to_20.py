@@ -31,3 +31,18 @@ while i < len(string) - 1:
     i += 3
 
 print(divided_string)
+
+# 13
+
+string = 'aaaaajkfsjdabvb'
+
+b = list(string)
+
+for index, item in enumerate(b):
+    if index % 2 == 0:
+        if item == ('a' or 'b'):
+            b[index] = 'c'
+        else:
+            b[index] = 'a'
+
+changed_string = ''.join(b)
