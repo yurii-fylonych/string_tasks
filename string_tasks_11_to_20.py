@@ -9,4 +9,25 @@ else:
     b = string + k * 'o'
 
 
+# 12
 
+import random
+
+string = "abcbcaabcaaabbbccc"
+divided_string = ''
+i = 0
+k = 'qweyuuriyweyuropsdf[psdfjlkvnnfd;l13249085-'
+
+while i < len(string) - 1:
+    if string[i + 1] != string[i] and string[i + 2]:
+        divided_string += string[i] + string[i + 1] + string[i + 2] + ' '
+    else:
+        while True:
+            random_sign = random.choice(k)
+            if random_sign != string[i] or string[i + 2]:
+                break
+
+        divided_string += string[i] + random_sign + string[i + 2] + ' '
+    i += 3
+
+print(divided_string)
