@@ -56,3 +56,18 @@ n = 0
 for i in range(len(string)):
     if string[i] in digit:
         n += 1
+
+# 15
+
+string = 'aaaadasd'
+
+condition = True
+
+for i in string:
+    if i != ('a' or 'b' or 'c'):
+        condition = False
+
+if condition == False:
+    print('Either char located in string')
+else:
+    print('String contain only a, b, c chars')
