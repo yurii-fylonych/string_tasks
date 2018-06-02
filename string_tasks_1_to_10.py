@@ -37,15 +37,18 @@ else:
     print(string[0: 3], string[k - 3: k])
 
 # 4
-lst = []
+
+string = 'qwejasd3qd'
+result = ''
 
 for i in range(10):
     if i % 2 == 0:
-        lst.append(random.choice('0123456789'))
+        result += random.choice('0123456789')
     else:
-        lst.append(random.choice('qwertyuiopasdfghjklzxc'))
+        result += random.choice('qwertyuiopasdfghjklzxc')
 
-print(''.join(lst))
+print(result)
+
 
 # 5
 
@@ -62,3 +65,18 @@ string = 'qweqjjflsdjflsfjgdf'
 k = len(string)
 
 print(string[3: k: 3])
+
+
+# 7
+
+string = '0qweqjjf+0ls+dj0f+lsf+jgdf'
+n = 0
+z = 0
+
+for i in range(len(string)):
+    if string[i] == ('+' or '-'):
+        n += 1
+        if string[i + 1] == '0':
+            z += 1
+
+print(n, z)
