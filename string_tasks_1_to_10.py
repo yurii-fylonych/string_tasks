@@ -87,9 +87,9 @@ string = '0qweqjjf+yls+xdyj0fxx+lsf+jgwdf'
 
 i = 0
 
-if 'x' not in string:
+if not 'x' in string:
     print('x is absent in your list')
-if 'w' not in string:
+if not 'w' in string:
     print('w is absent in your list')
 
 while i < len(string):
