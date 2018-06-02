@@ -120,3 +120,15 @@ elif k < m:
     print_string(b, diff)
 else:
     print_string(a, diff)
+
+# 10
+
+string = '0qweqjjf+yls+xdyj0fxx+lsf+jgdf'
+
+
+if string[0:2] == 'abc':
+    changed_string = 'www' + string[2:]
+else:
+    changed_string = string + 'zzz'
+
+print(changed_string)
