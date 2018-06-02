@@ -80,3 +80,23 @@ for i in range(len(string)):
             z += 1
 
 print(n, z)
+
+# 8
+
+string = '0qweqjjf+yls+xdyj0fxx+lsf+jgwdf'
+
+i = 0
+
+if 'x' not in string:
+    print('x is absent in your list')
+if 'w' not in string:
+    print('w is absent in your list')
+
+while i < len(string):
+    if string[i] == 'x':
+        print('Char', string[i], 'was found earlier')
+        break
+    if string[i] == 'w':
+        print('Char', string[i], 'was found earlier')
+        break
+    i += 1
