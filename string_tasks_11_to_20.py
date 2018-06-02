@@ -46,3 +46,13 @@ for index, item in enumerate(b):
             b[index] = 'a'
 
 changed_string = ''.join(b)
+
+# 14
+
+string = '123kjlakjaslda1'
+digit = '0123456789'
+n = 0
+
+for i in range(len(string)):
+    if string[i] in digit:
+        n += 1
