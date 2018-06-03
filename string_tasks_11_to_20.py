@@ -100,3 +100,15 @@ if condition == False:
     print('Either char located in string')
 else:
     print('String contain only a, b, c chars')
+
+# 15.3
+
+string = 'aaaaae3'
+string_abc = 'abc'
+
+result = set(string).difference(string_abc)
+
+if bool(result):
+    print('Either char located in string')
+else:
+    print('String contain only a, b, c chars')
