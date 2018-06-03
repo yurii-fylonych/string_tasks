@@ -208,3 +208,29 @@ else:
     n = string.count('aba')
 
 print(n)
+
+# 20.1
+
+str = 'abxabc3dlabc333    33  '
+
+lst = str.split()
+
+str_with_one_space = ' '.join(lst)
+
+print(str_with_one_space)
+
+# 20.2
+
+li = list(str)
+i = 0
+
+while i < len(li):
+   if li[i] == ' ' and li[i + 1] == ' ':
+       del li[i]
+       i -+ 1
+   else:
+       i += 1
+
+str_with_one_space = ''.join(li)
+
+print(str_with_one_space)
