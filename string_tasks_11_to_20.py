@@ -112,3 +112,21 @@ if bool(result):
     print('Either char located in string')
 else:
     print('String contain only a, b, c chars')
+
+
+# 16
+
+string = 'basdj4word8dbword4'
+
+changed_string = string .replace('word', 'letter')
+
+print(changed_string)
+
+"""If only one word need to change you can use code located below"""
+
+string = 'I like to use only polite words'
+
+location = string.find('words')
+n = len('words')
+
+changed_lst = string[:location] + 'letters' + string[(location + n):]
