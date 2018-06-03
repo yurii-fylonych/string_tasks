@@ -81,7 +81,7 @@ for i in range(len(string)):
 
 print(n, z)
 
-# 8
+# 8.1
 
 string = '0qweqjjf+yls+xdyj0fxx+lsf+jgwdf'
 
@@ -100,6 +100,26 @@ while i < len(string):
         print('Char', string[i], 'was found earlier')
         break
     i += 1
+
+# 8.2
+
+string = '0xqweqjjf+yls+xdyj0fxx+lsf+jgwdf'
+
+i = 0
+
+if not 'x' in string:
+    print('x is absent in your list')
+if not 'w' in string:
+    print('w is absent in your list')
+
+position_x = string.find('x')
+position_w = string.find('w')
+
+if position_x > position_w:
+    print('Char w was found earlier')
+else:
+    print('Char x was found earlier')
+
 
 # 9
 
