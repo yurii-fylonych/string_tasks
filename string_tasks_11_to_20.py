@@ -130,3 +130,24 @@ location = string.find('words')
 n = len('words')
 
 changed_lst = string[:location] + 'letters' + string[(location + n):]
+
+# 17.1
+
+string = 'xabcx aa abc aabcx'
+abc = 'xabc'
+
+changed_string = string.replace(abc, 'x')
+
+print(changed_string)
+
+# 17.2
+
+'''If remove only one letter'''
+
+string = 'basabcdj4word8dbwxxxord4'
+abc = 'abc'
+k = string.find(abc)
+
+changed_string = string[:k] + string[k:].replace('x','')
+
+print(changed_string)
