@@ -47,7 +47,7 @@ for index, item in enumerate(b):
 
 changed_string = ''.join(b)
 
-# 14
+# 14.1
 
 string = '123kjlakjaslda1'
 digit = '0123456789'
@@ -57,7 +57,18 @@ for i in range(len(string)):
     if string[i] in digit:
         n += 1
 
-# 15
+# 14.2
+
+string = '123kjlakjaslda1'
+n = 0
+
+for char in string:
+    if char.isdigit() == True:
+        n += 1
+
+print(n)
+
+# 15.1
 
 string = 'aaaadasd'
 
@@ -66,6 +77,24 @@ condition = True
 for i in string:
     if i != ('a' or 'b' or 'c'):
         condition = False
+
+if condition == False:
+    print('Either char located in string')
+else:
+    print('String contain only a, b, c chars')
+
+# 15.2.
+
+string = 'aaaaaee3'
+
+condition = True
+i = 0
+
+while i < len(string):
+    if string[i] != ('a' or 'b' or 'c'):
+        condition = False
+        break
+    i += 1
 
 if condition == False:
     print('Either char located in string')
