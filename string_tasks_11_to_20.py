@@ -167,3 +167,32 @@ for index, item in enumerate(lst):
 changed_string = ''.join(lst)
 
 print(changed_string)
+
+# 18.1
+
+string = '3 abcabcab abc3 abc abc3'
+
+for index, char in enumerate(string):
+    if char.isdigit() == True:
+        if string[index - 3: index] == 'abc':
+            result = string.replace('abc' + char, char)
+
+print(result)
+
+# 18.2.
+
+string = 'abxabc3dlabc33333'
+digit = '0123456789'
+lst = list(string)
+index = 0
+
+while index < len(lst):
+    k = ['a', 'b', 'c']
+    if lst[index] in digit:
+        if lst[index - 3: index] == k:
+            del lst[index - 3: index]
+            index -= 3
+    index += 1
+
+new_string = ''.join(lst)
+print(lst)
