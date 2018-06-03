@@ -196,3 +196,15 @@ while index < len(lst):
 
 new_string = ''.join(lst)
 print(lst)
+
+
+# 19
+
+string = 'ldlka;sdabagkabaabajfdj'
+
+if string.find('aba') == -1:
+    print('aba is absent in string')
+else:
+    n = string.count('aba')
+
+print(n)
