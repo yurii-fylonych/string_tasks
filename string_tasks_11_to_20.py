@@ -151,3 +151,19 @@ k = string.find(abc)
 changed_string = string[:k] + string[k:].replace('x','')
 
 print(changed_string)
+
+
+# 17.3
+
+string = 'abxabcldxabclka;sdabagkjfdjaba'
+
+lst = list(string)
+
+for index, item in enumerate(lst):
+    k = ['a', 'b', 'c']
+    if item == 'x' and lst[index + 1: index + 4] == k:
+        lst.remove(lst[index])
+
+changed_string = ''.join(lst)
+
+print(changed_string)
