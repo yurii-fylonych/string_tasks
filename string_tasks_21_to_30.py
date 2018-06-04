@@ -59,3 +59,18 @@ for char in string:
         sum_digits += int(char)
 
 print(sum_digits)
+
+
+# 24.1
+string = 'ab-aldlka;sd-a123bag-kj11fdjaba'
+
+k = string.split(' ')
+sum_digit = 0
+
+for i in k:
+    try:
+        sum_digit += int(i)
+    except:
+        pass
+
+print(sum_digit)
