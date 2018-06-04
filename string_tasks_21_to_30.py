@@ -48,3 +48,14 @@ for char in text:
         n = 0
 
 print(max_number)
+
+# 23
+
+string = 'ab-aldlka;sd-a123bag-kj11fdjaba'
+sum_digits = 0
+
+for char in string:
+    if char.isdigit():
+        sum_digits += int(char)
+
+print(sum_digits)
