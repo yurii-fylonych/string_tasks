@@ -29,3 +29,22 @@ result = string.split()
 
 for word in result:
     print(word, end=' ')
+
+
+# 22
+
+text = "qweeqw a333sa3 333 qwe333qew13 asdaasd"
+digit = '0123456789'
+letter = 'qwetryuioopasdfghjklzxsacvbnm '
+n = 0
+max_number = 0
+
+for char in text:
+    if n > max_number:
+        max_number = n
+    if char in digit:
+        n += 1
+    else:
+        n = 0
+
+print(max_number)
