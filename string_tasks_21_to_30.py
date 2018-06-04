@@ -88,3 +88,17 @@ for ch in string:
         current = ''
 
 print(sum_digit)
+
+
+# 24.3
+
+string = 'abbaldlka 21 31   bsd-a123bag kj11fdjaba'
+sum = 0
+words_list = string.split()
+
+for word in words_list:
+    if word.isdigit() == True:
+        sum += int(word)
+
+
+print(sum)
