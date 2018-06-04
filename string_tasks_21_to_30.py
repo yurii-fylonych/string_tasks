@@ -102,3 +102,15 @@ for word in words_list:
 
 
 print(sum)
+
+# 25.1
+
+string = 'abbaldlka 21 31   bsd-a123bag kj11fdjaba'
+
+for i in range(len(string)):
+    k = ' ' * i
+    if k in string:
+        n = len(k)
+        del k
+
+print(n)
