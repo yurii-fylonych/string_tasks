@@ -74,3 +74,17 @@ for i in k:
         pass
 
 print(sum_digit)
+
+# 24.2
+
+sum_digit = 0
+current = ''
+
+for ch in string:
+    if ch.isdigit():
+        current += ch
+    elif current != '':
+        sum_digit += int(current)
+        current = ''
+
+print(sum_digit)
