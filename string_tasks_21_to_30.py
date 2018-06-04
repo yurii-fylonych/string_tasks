@@ -114,3 +114,21 @@ for i in range(len(string)):
         del k
 
 print(n)
+
+
+# 25.2
+
+string = 'abbaldlka 21 31   bsd-a123bag kj11fdjaba'
+
+max_space = 0
+n = 0
+
+for i in range(len(string)):
+    if string[i] == ' ':
+        n += 1
+    else:
+        if n > max_space:
+            max_space = n
+        n = 0
+
+print(max_space)
