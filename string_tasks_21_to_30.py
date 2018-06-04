@@ -16,3 +16,16 @@ list_of_word = result.split()
 for word in list_of_word:
     print(word, end=' ')
 
+
+# 21.2
+
+string = 'ab-aa;sd-ab-ka'
+symbols = '-;'
+
+for char in symbols:
+    string = string.replace(char, ' ')
+
+result = string.split()
+
+for word in result:
+    print(word, end=' ')
