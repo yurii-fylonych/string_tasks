@@ -103,20 +103,9 @@ for word in words_list:
 
 print(sum)
 
+
+
 # 25.1
-
-string = 'abbaldlka 21 31   bsd-a123bag kj11fdjaba'
-
-for i in range(len(string)):
-    k = ' ' * i
-    if k in string:
-        n = len(k)
-        del k
-
-print(n)
-
-
-# 25.2
 
 string = 'abbaldlka 21 31   bsd-a123bag kj11fdjaba'
 
@@ -132,3 +121,19 @@ for i in range(len(string)):
         n = 0
 
 print(max_space)
+
+
+
+# 26
+
+first_word = 'abbAdlkma'
+second_word = 'asdvfmj'
+signs = ''
+
+for i in first_word.lower():
+    count_first = first_word.lower().count(i)
+    count_second = second_word.lower().count(i)
+    if count_first == count_second == 1:
+        signs += i
+
+print(signs)
