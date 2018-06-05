@@ -187,3 +187,14 @@ string = 'abbAdlka 21 323 bsB-a1Dbag kaj11Baba'
 
 str = string.replace('a', 'A').replace('b', 'B')
 print(str)
+
+# 30
+
+
+string = 'ab  123123  asdasd ,aldlka;sd   abag,  kjfdjaba'
+
+i = string.find(',')
+j = i + string[i + 1:].find(',')
+
+call = string[i + 1: j]
+print(call)
