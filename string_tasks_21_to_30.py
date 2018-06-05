@@ -146,3 +146,36 @@ list_str = ['abbaldlka', '21', '323', 'bsd-a123bag', 'kj11fdjaba']
 result = sorted(list_str, key = len)
 
 print(result)
+
+
+# 28
+
+list_strings = ['abbAdlka', 'abbAdlka', 'asd44444vfj', 'asdvfd2ej', 'asdvf123j']
+
+list_digit_in_word = []
+
+list_strings = ['3333333', 'abb333Adlka', 'asd44444vfj', 'asdvfd2ej', 'asdvf123j']
+
+
+list_digit_in_word = list(map(lambda word: len(list(filter(lambda x: x.isdigit(), word))), list_strings))
+
+
+for i in range(len(list_digit_in_word) - 1):
+    for j in range(len(list_digit_in_word) - 1 - i):
+        if list_digit_in_word[j] > list_digit_in_word[j + 1]:
+            list_digit_in_word[j], list_digit_in_word[j + 1] = list_digit_in_word[j + 1], list_digit_in_word[j]
+            list_strings[j], list_strings[j + 1] = list_strings[j + 1], list_strings[j]
+
+i = 0
+d = {}
+
+while i < len(list_digit_in_word):
+    if list_digit_in_word[i] in d.keys():
+        d[list_digit_in_word[i]].append(list_strings[i])
+    else:
+        d[list_digit_in_word[i]] = [list_strings[i]]
+    i += 1
+
+d = dict(d)
+
+print(d)
