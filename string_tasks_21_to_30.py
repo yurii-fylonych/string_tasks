@@ -179,3 +179,11 @@ while i < len(list_digit_in_word):
 d = dict(d)
 
 print(d)
+
+
+# 29
+
+string = 'abbAdlka 21 323 bsB-a1Dbag kaj11Baba'
+
+str = string.replace('a', 'A').replace('b', 'B')
+print(str)
