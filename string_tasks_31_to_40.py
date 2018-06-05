@@ -23,3 +23,22 @@ if result == -1:
     print('First string does not include second string')
 else:
     print('First string includes second string')
+
+
+# 33
+
+first_string = '1234567'
+second_string = '1234'
+condition = True
+
+for letter in second_string:
+    if letter in first_string:
+        condition = True
+    else:
+        condition = False
+        break
+
+if condition == True:
+    print('Yes, using words from first string it is possible create second')
+else:
+    print('Cry, it is impossible')
