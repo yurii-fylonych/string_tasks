@@ -137,3 +137,12 @@ for i in first_word.lower():
         signs += i
 
 print(signs)
+
+
+# 27
+
+list_str = ['abbaldlka', '21', '323', 'bsd-a123bag', 'kj11fdjaba']
+
+result = sorted(list_str, key = len)
+
+print(result)
