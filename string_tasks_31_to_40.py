@@ -42,3 +42,28 @@ if condition == True:
     print('Yes, using words from first string it is possible create second')
 else:
     print('Cry, it is impossible')
+
+
+
+# 34
+
+
+first_string = 'abs  123123'
+second_string = 'ab3as  3'
+
+condition = True
+
+for char in second_string:
+    n = second_string.count(char)
+    if n == 2:
+        condition = True
+    elif n == 1 and first_string.find(char) != -1:
+        condition = True
+    else:
+        condition = False
+        break
+
+if condition == True:
+    print('Yes you can')
+else:
+    print('Do not regret. In next time you will be more lucky')
