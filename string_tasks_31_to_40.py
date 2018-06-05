@@ -67,3 +67,15 @@ if condition == True:
     print('Yes you can')
 else:
     print('Do not regret. In next time you will be more lucky')
+
+
+
+# 35.2
+
+string = '12345ds673sdfs3'
+
+for char in string:
+    if char.isdigit():
+        string = string.replace(char, '')
+
+print(string)
