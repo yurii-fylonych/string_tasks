@@ -123,3 +123,12 @@ for char in string:
         string_b_after_a += 'b'
 
 print(string_b_after_a)
+
+
+# 40
+
+first_string = '1 23 45 ads6! 73sdb23bf s3'
+second_string = '23'
+
+result = first_string.replace(second_string, '', 1)
+print(result)
