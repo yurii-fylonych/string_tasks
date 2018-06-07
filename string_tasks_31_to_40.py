@@ -97,3 +97,14 @@ lst = string.split()
 string_without_several_spaces = ' '.join(lst)
 
 print(string_without_several_spaces)
+
+
+# 38.1
+
+string = '1 23 45 ds6! 73sdf s3'
+
+list_of_words = string.split(' ')
+
+number_words = len(list_of_words)
+
+print(number_words)
