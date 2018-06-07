@@ -79,3 +79,10 @@ for char in string:
         string = string.replace(char, '')
 
 print(string)
+
+
+# 36.1
+
+string = '12345ds6!73sdfs3'
+
+string.replace('!', '')
