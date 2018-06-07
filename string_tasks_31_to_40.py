@@ -86,3 +86,14 @@ print(string)
 string = '12345ds6!73sdfs3'
 
 string.replace('!', '')
+
+
+# 37
+
+
+string = 'ab   aldlka;sd   abag   kjfdjaba'
+
+lst = string.split()
+string_without_several_spaces = ' '.join(lst)
+
+print(string_without_several_spaces)
