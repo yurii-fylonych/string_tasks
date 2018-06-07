@@ -26,3 +26,21 @@ for word in lst:
         max_word = word
 
 print(max_word)
+
+# 43.2
+
+string = '8'
+
+d = {1: 'I',
+     2: 'II',
+     3: 'III',
+     4: 'IV',
+     5: 'V',
+     6: 'VI',
+     7: 'VII',
+     8: 'VIII',
+     9: 'IX',
+     10: 'X'
+     }
+
+print(d[int(string)])
