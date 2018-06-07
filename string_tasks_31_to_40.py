@@ -108,3 +108,18 @@ list_of_words = string.split(' ')
 number_words = len(list_of_words)
 
 print(number_words)
+
+
+
+# 39
+
+string = '1 23 45 ads6! 73sdbbf s3'
+
+string_b_after_a = ''
+
+for char in string:
+    string_b_after_a += char
+    if char == 'a':
+        string_b_after_a += 'b'
+
+print(string_b_after_a)
