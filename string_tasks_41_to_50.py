@@ -144,3 +144,17 @@ for vowel in vowels:
 print(string)
 print(string_without_signs)
 print(string_only_wovels)
+
+
+# 48.2
+
+string = "You are king in your own life. If you understand meaning you will reach success"
+
+list_words = string.split()
+
+first_let_text = list(map(lambda word: word[0], list_words))
+
+words_with_ss = list(filter(lambda word: word.count('s') > 1, list_words))
+
+print(' '.join(words_with_ss))
+print(' '.join(first_let_text))
