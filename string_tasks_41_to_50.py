@@ -118,3 +118,29 @@ while i <= divided_part:
 result = value_with_spaces.strip()
 
 print(result)
+
+
+# 47.2
+
+string = "You are !!!king in your own life"
+digit = '0123456789'
+vowels = 'aeiouy'
+
+string_without_signs = ''
+
+for char in string:
+    if char.isalnum():
+        if char.isupper():
+            string_without_signs += char.lower()
+        else:
+            string_without_signs += char
+
+string_only_wovels = ''
+
+for vowel in vowels:
+    n = string.count(vowel)
+    string_only_wovels += n * vowel
+
+print(string)
+print(string_without_signs)
+print(string_only_wovels)
