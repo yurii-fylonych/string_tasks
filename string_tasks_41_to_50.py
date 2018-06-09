@@ -93,3 +93,28 @@ def generate_email():
 
 
 print(generate_email())
+
+
+
+# 46
+
+value = 111222333
+
+str_value = str(value)
+n = len(str_value)
+digit_first_part = n % 3
+divided_part = n - digit_first_part
+
+value_with_spaces = ''
+value_with_spaces = str_value[:digit_first_part]
+
+i = digit_first_part
+
+while i <= divided_part:
+    value_with_spaces += ' ' + str_value[i: i + 3]
+
+    i += 3
+
+result = value_with_spaces.strip()
+
+print(result)
