@@ -180,3 +180,18 @@ word_double_a = list(filter(lambda word: word.count('a') >= 2, list_words))
 
 for word in word_double_a:
     print(word, end=' ')
+
+
+# 50
+
+string = 'ab  123123  asdasd ,aldlka;sd   abag,  kjfdjaba'
+string_with_spaces = ''
+n = len(string)
+
+for char in string:
+    string_with_spaces += char + ' '
+
+result = string_with_spaces.rstrip()
+
+print(result)
+
