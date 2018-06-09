@@ -81,3 +81,15 @@ if condition == True:
    print('Correct email')
 else:
     print('Try again')
+
+
+
+# 45
+
+def generate_email():
+    email_name = str(input())
+    email = email_name + '@i.ua'
+    return email
+
+
+print(generate_email())
