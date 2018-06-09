@@ -158,3 +158,25 @@ words_with_ss = list(filter(lambda word: word.count('s') > 1, list_words))
 
 print(' '.join(words_with_ss))
 print(' '.join(first_let_text))
+
+
+# 49
+
+string = "You are king in your own life. If ssaa  aa you understand meaning you will reach success"
+wovels = 'aeiuy'
+
+list_words = string.split()
+sorted_list = sorted(string.split())
+count_wovels_word = list(map(lambda word: len(list((filter(lambda x: x in wovels, word)))), sorted_list))
+max_wovels_words = max(count_wovels_word)
+
+for index, item in enumerate(count_wovels_word):
+    if item == max_wovels_words:
+        print(sorted_list[index], end=' ')
+
+print('\n')
+
+word_double_a = list(filter(lambda word: word.count('a') >= 2, list_words))
+
+for word in word_double_a:
+    print(word, end=' ')
