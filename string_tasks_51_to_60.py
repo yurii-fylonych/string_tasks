@@ -56,3 +56,28 @@ def create_pass(n):
 
 print(create_pass(10))
 
+
+# 54
+
+import random
+
+def create_pass():
+    letters = 'zxcvbnmasdfghjklqwertyuiop'
+    digit = '0123456789'
+    pass_4_digits = ''.join([random.choice(digit) for x in range(4)])
+    pass_2_letters = ''.join(random.sample(letters, 2))
+    pass_4_0_1 = ''.join([random.choice('01') for x in range(4)])
+
+    k = pass_4_0_1.find('1')
+
+    if k == -1:
+        pass_4_0_1 = ''.join([random.shafle(0, 0, 0, 1)])
+
+    password = pass_4_digits + pass_2_letters + pass_4_0_1
+
+    return password
+
+
+print(create_pass())
+
+
