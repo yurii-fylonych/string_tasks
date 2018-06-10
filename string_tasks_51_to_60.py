@@ -39,4 +39,20 @@ else:
         print(char_list)
     string = ''.join(char_list)
 
-print()
+
+# 53
+
+def create_pass(n):
+    if n < 8:
+        n = 8
+
+    digit = '0123456789'
+    letters = 'zxcvbnmasdfghjklqwertyuiop'
+    upper_letter = letters.upper()
+
+    sign_for_pass = letters + upper_letter + digit
+
+    return ''.join([random.choice(sign_for_pass) for x in range(n)])
+
+print(create_pass(10))
+
