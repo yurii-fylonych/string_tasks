@@ -102,3 +102,16 @@ def create_pass():
 
 print(create_pass())
 
+# 56.2
+
+string = 'It would be   grade if I did not make a mistakes'
+
+words_list = string.split()
+len_words = list(map(lambda x: len(x), words_list))
+
+max_len, min_len = max(len_words), min(len_words)
+max_index, min_index = len_words.index(max_len), len_words.index(min_len)
+
+words_list[max_index], words_list[min_index] = words_list[min_index], words_list[max_index]
+
+print(' '.join(words_list))
