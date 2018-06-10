@@ -115,3 +115,31 @@ max_index, min_index = len_words.index(max_len), len_words.index(min_len)
 words_list[max_index], words_list[min_index] = words_list[min_index], words_list[max_index]
 
 print(' '.join(words_list))
+
+# 56.1
+
+string = 'It would be   grade if I did not make a mistakes'
+
+working_string = 'It would be   grade if I did not make a mistakes' + ' '
+words_list = working_string.split()
+
+min_word = string
+max_word = ''
+
+for word in words_list:
+    if len(word) < len(min_word):
+        min_word = word
+    if len(word) > len(max_word):
+        max_word = word
+
+position_max = working_string.find(max_word + ' ')
+position_min = working_string.find(min_word + ' ')
+
+if position_max > position_min:
+    changed = working_string.replace(min_word + ' ', max_word + ' ')
+    result = changed[:position_max] + changed[position_max:].replace(max_word + ' ', min_word + ' ')
+if position_min > position_max:
+    changed = working_string.replace(max_word + ' ', min_word + ' ')
+    result = changed[:position_min] + changed[position_min:].replace(min_word + ' ', max_word + ' ')
+
+print(result.strip())
