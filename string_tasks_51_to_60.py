@@ -80,4 +80,25 @@ def create_pass():
 
 print(create_pass())
 
+# 55
+
+import random
+
+def create_pass():
+    letters = 'zxcvbnmasdfghjklqwertyuiop'
+    digit = '02468'
+    pass_5_digits = ''.join([random.choice(digit) for x in range(5)])
+    pass_5_letters = ''.join([random.choice(letters) for x in range(5)])
+
+    if pass_5_digits.find('8') == -1:
+        last_2_sign = 'AB'
+    else:
+        last_2_sign = 'XY'
+
+    password = pass_5_digits + pass_5_letters + last_2_sign
+
+    return password
+
+
+print(create_pass())
 
