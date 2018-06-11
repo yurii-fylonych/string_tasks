@@ -176,3 +176,30 @@ result = ' '.join(sorted_words_list)
 
 print(result)
 
+# 59.1
+
+string = 'It would be   grade if I did not make a mistakes'
+
+words_list = string.split()
+
+d = {}
+
+max_len_word = 0
+
+for word in words_list:
+    d[word] = len(word)
+
+    if len(word) > max_len_word:
+        max_len_word = len(word)
+
+i = max_len_word
+result = ''
+
+while i > 0:
+    for k, v in d.items():
+        if v == i:
+            result += k + ' '
+
+    i -= 1
+
+print(result.strip())
