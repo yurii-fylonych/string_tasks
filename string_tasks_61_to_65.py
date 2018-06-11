@@ -30,3 +30,24 @@ if condition == False:
     print('Incorrect alphabet order')
 else:
     print('Yes')
+
+# 63
+
+sentance = 'You can cou333nt 221 33 on me like 33 one 222 two 33  555 444 three, i'
+
+def find_max_len(lst):
+    max_len_word = lst[0]
+
+    for item in lst:
+        if len(item) > len(max_len_word):
+            max_len_word = item
+
+    return max_len_word
+
+len_words_list = list(filter(lambda word: word.isdigit(), sentance.split()))
+
+if len(len_words_list) > 0:
+    result = find_max_len(len_words_list)
+    print(result)
+else:
+    print('In your text absent numbers')
