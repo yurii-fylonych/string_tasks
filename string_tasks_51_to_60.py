@@ -159,3 +159,20 @@ for word_1 in words_list1_str:
         if word_2 == word_1:
             n += 1
     print('Word {} find {} times in sentence'.format(word_1 , n))
+
+
+
+
+# 58
+
+
+string = 'It would be   grade if I did not make a mistakes'
+
+words_list = string.lower().split()
+
+sorted_words_list = sorted(words_list)
+
+result = ' '.join(sorted_words_list)
+
+print(result)
+
