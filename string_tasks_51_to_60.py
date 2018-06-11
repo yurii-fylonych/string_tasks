@@ -143,3 +143,19 @@ if position_min > position_max:
     result = changed[:position_min] + changed[position_min:].replace(min_word + ' ', max_word + ' ')
 
 print(result.strip())
+
+
+# 57
+
+string_1 = 'It would be grade if I did not make a mistakes'
+string_2 = 'It is good practise for man working a lot'
+
+words_list1_str = string_1.split()
+words_list2_str = string_2.split()
+
+for word_1 in words_list1_str:
+    n = 0
+    for word_2 in words_list2_str:
+        if word_2 == word_1:
+            n += 1
+    print('Word {} find {} times in sentence'.format(word_1 , n))
