@@ -74,3 +74,32 @@ if len(identical_words) > 0:
     print(max_len_word)
 else:
     print('In you sentance absent identical words')
+
+
+# 64.2
+
+
+first_sentance = 'You can count on me like one two three, i'
+second_sentance = ' will be there, And I know when  need it. can '
+third_sentance = ' count on you like four three two You will be there.'
+
+
+def correct_sentance(sentance):
+    return list(filter(lambda word: word.isalnum(), sentance.lower().split()))
+
+
+first_words_list = correct_sentance(first_sentance)
+second_words_list = correct_sentance(second_sentance)
+third_words_list = correct_sentance(third_sentance)
+
+ident_words = list(set(first_words_list).intersection(set(second_words_list)).intersection(set(third_words_list)))
+
+if len(ident_words) > 0:
+    max_len_word = ident_words[0]
+
+    for item in ident_words:
+        if len(item) > len(max_len_word):
+            max_len_word = item
+    print(max_len_word)
+else:
+    print('In you sentance absent identical words')
