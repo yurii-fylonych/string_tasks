@@ -103,3 +103,18 @@ if len(ident_words) > 0:
     print(max_len_word)
 else:
     print('In you sentance absent identical words')
+
+# 65
+
+
+sentance = 'You can cou333nt 221 33 on me like 33 one 222 two 33  555 444 three, i'
+
+def remove_words(sentance, n):
+    for word in sentance.split():
+        if word.isalnum() and sentance.count(word) > n:
+            sentance = sentance.replace(word, '')
+
+    return sentance
+
+
+print(remove_words(sentance, 2))
