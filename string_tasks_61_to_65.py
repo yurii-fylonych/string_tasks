@@ -51,3 +51,26 @@ if len(len_words_list) > 0:
     print(result)
 else:
     print('In your text absent numbers')
+
+
+# 64.1
+
+
+first_sentance = 'You can count on me like one two three, i'
+second_sentance = 'I will be there, And I know when I need it. can '
+third_sentance = 'I can count on you like four three two You will be there.'
+
+first_words_list = list(filter(lambda word: word.isalnum(), sentance.lower().split()))
+
+identical_words = list(filter(lambda word: second_sentance.lower().find(word) != -1
+                                           and third_sentance.lower().find(word) != -1, first_words_list))
+
+if len(identical_words) > 0:
+    max_len_word = identical_words[0]
+
+    for item in identical_words:
+        if len(item) > len(max_len_word):
+            max_len_word = item
+    print(max_len_word)
+else:
+    print('In you sentance absent identical words')
