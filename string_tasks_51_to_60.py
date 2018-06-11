@@ -203,3 +203,23 @@ while i > 0:
     i -= 1
 
 print(result.strip())
+
+
+# 59.2
+
+string = 'It would be   grade if I did not make a mistakes'
+
+words_list = string.split()
+
+count = list(map(lambda x: len(x), words_list))
+
+n = len(words_list)
+
+for i in range(n - 1):
+    for j in range(n - 1 - i):
+        if count[j] > count[j + 1]:
+            count[j], count[j + 1] = count[j + 1], count[j]
+            words_list[j], words_list[j + 1] = words_list[j + 1], words_list[j]
+
+result = ' '.join(words_list)
+print(result)
